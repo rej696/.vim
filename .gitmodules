@@ -13,3 +13,6 @@
 [submodule "pack/rainbow/start/rainbow"]
 	path = pack/rainbow/start/rainbow
 	url = git@github.com:luochen1990/rainbow.git
+[submodule "pack/vendor/start/lightline.vim"]
+	path = pack/vendor/start/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git
