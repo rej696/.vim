@@ -4,9 +4,11 @@ endif
 
 syntax on
 set background=dark
+let g:solarized_termtrans = 1
+let g:solarized_termcolors = 16
 colorscheme solarized
 let g:rainbow_active = 1
-let g:lightline = {'colorscheme': 'solarized'}
+let g:lightline = {'colorscheme': 'powerline'}
 set laststatus=2
 set noshowmode
 
