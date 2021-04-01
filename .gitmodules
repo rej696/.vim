@@ -1,21 +1,21 @@
 [submodule "pack/default/start/vim-polyglot"]
 	path = pack/default/start/vim-polyglot
-	url = git@github.com:sheerun/vim-polyglot.git
+	url = http://github.com/sheerun/vim-polyglot.git
 [submodule "pack/vendor/start/vim-colors-solarized"]
 	path = pack/vendor/start/vim-colors-solarized
-	url = git@github.com:micha/vim-colors-solarized.git
+	url = http://github.com/micha/vim-colors-solarized.git
 [submodule "pack/airblade/start/vim-gitgutter"]
 	path = pack/airblade/start/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
+	url = http://github.com/airblade/vim-gitgutter.git
 [submodule "pack/git-plugins/start/ale"]
 	path = pack/git-plugins/start/ale
-	url = git@github.com:dense-analysis/ale.git
+	url = http://github.com/dense-analysis/ale.git
 [submodule "pack/rainbow/start/rainbow"]
 	path = pack/rainbow/start/rainbow
-	url = git@github.com:luochen1990/rainbow.git
+	url = http://github.com/luochen1990/rainbow.git
 [submodule "pack/vendor/start/lightline.vim"]
 	path = pack/vendor/start/lightline.vim
-	url = git@github.com:itchyny/lightline.vim.git
+	url = http://github.com/itchyny/lightline.vim.git
 [submodule "pack/vendor/start/nerdtree"]
 	path = pack/vendor/start/nerdtree
-	url = git@github.com:preservim/nerdtree.git
+	url = http://github.com/preservim/nerdtree.git
