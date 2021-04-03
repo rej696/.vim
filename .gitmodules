@@ -22,3 +22,15 @@
 [submodule "pack/tpope/start/fireplace"]
 	path = pack/tpope/start/fireplace
 	url = https://tpope.io/vim/fireplace.git
+[submodule "pack/tpope/start/vim-sexp-mappings-for-regular-people"]
+	path = pack/tpope/start/vim-sexp-mappings-for-regular-people
+	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
+[submodule "pack/tpope/start/vim-repeat"]
+	path = pack/tpope/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "pack/tpope/start/vim-surround"]
+	path = pack/tpope/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/guns/start/vim-sexp"]
+	path = pack/guns/start/vim-sexp
+	url = https://github.com/guns/vim-sexp.git
