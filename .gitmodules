@@ -19,3 +19,6 @@
 [submodule "pack/vendor/start/nerdtree"]
 	path = pack/vendor/start/nerdtree
 	url = http://github.com/preservim/nerdtree.git
+[submodule "pack/tpope/start/fireplace"]
+	path = pack/tpope/start/fireplace
+	url = https://tpope.io/vim/fireplace.git
