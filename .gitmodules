@@ -34,3 +34,6 @@
 [submodule "pack/guns/start/vim-sexp"]
 	path = pack/guns/start/vim-sexp
 	url = https://github.com/guns/vim-sexp.git
+[submodule "pack/my/start/scvim"]
+	path = pack/my/start/scvim
+	url = https://github.com/supercollider/scvim.git
