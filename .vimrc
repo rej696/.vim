@@ -37,8 +37,8 @@ let &t_EI="\e[2 q"
 
 filetype plugin indent on
 
-set modeline
 set wildmenu
+set wildmode=list:longest,full
 set splitright
 set splitbelow
 set mouse=a
@@ -102,6 +102,8 @@ nnoremap <A-Right> <C-W><C-L>
 
 " Buffer Commands
 nnoremap gb :ls<CR>:b<Space>
+
+" grep files
 nnoremap gv :vimgrep<Space>
 nnoremap gr :grep!<Space>
 
@@ -109,4 +111,6 @@ if executable("rg")
   set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
   set grepformat=%f:%l:%c:%m
 endif
+
+" fuzzy find files
 
