@@ -24,3 +24,31 @@ let g:ale_fixers = {
 packloadall
 silent! helptags ALL
 
+set nocompatible
+set autoindent
+set nu
+set smartindent
+set showmatch
+set textwidth=80
+set title
+set backspace=indent,eol,start
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set t_Co=16
+syntax on
+set sc
+set modeline
+set wildmenu
+set splitright
+set splitbelow
+set mouse=a
+set scrolloff=5
+
+
+" Remap Splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
