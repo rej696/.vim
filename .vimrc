@@ -102,10 +102,12 @@ nnoremap <A-Right> <C-W><C-L>
 
 " Buffer Commands
 nnoremap gb :ls<CR>:b<Space>
+nnoremap <Space>b :ls<CR>:b<Space>
 
 " grep files
 nnoremap gv :vimgrep<Space>
 nnoremap gr :grep!<Space>
+nnoremap <Space>g :grep!<Space>
 
 if executable("rg")
   set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
@@ -113,4 +115,7 @@ if executable("rg")
 endif
 
 " fuzzy find files
+set path+=**
+nnoremap <C-p> :find *
+nnoremap <Space>f :find *
 
