@@ -10,6 +10,9 @@
 " <Space>s = horizontal split
 " <Space>v = vertical split
 
+" Insert mode autocompletion <C-n> and <C-p>
+
+set textwidth=80
 set scrolloff=5
 set showcmd " show unfinished normal mode commands
 set nobackup " no swp files
@@ -33,6 +36,7 @@ set backspace=indent,eol,start
 " tabs & spaces & indentation
 filetype plugin indent on
 set autoindent " indent next line at same indentation as current line
+set smartindent
 set tabstop=8 " tabs are displayed as 8 characters
 set softtabstop=4 " tabs are expanded to 4 spaces
 set shiftwidth=4 " tabs are expanded to 4 spaces
@@ -40,8 +44,19 @@ set expandtab " tabs are expanded to 4 spaces
 
 " Colorsheme
 syntax on
+
+" set Molokai https://github.com/tomasr/molokai
 let g:rehash256 = 1 " better molokai color support
+" let g:molokai_original = 1 " different molokai setting
 colorscheme molokai
+
+" " set Solarized https://github.com/altercation/vim-colors-solarized
+" set background=dark
+" " let g:solarized_termcolors=256 " only use if not using solarized in terminal
+" let g:solarized_termcolors=16
+" let g:solarized_termtrans=1 " remove background
+" colorscheme solarized
+" set t_Co=16
 
 " Overwrite Terminal Request Version
 set t_RV=
@@ -52,7 +67,11 @@ let &t_EI="\e[2 q"
 
 " wildmenu
 set wildmenu
+" wildmenu uses a popup and does fuzzy find
+" set wildoptions=fuzzy,pum
 set wildmode=list:longest,full
+" Insert mode auto completion popup <C-n>
+set completeopt=menuone,noinsert,noselect
 
 " mouse
 set mouse=a
@@ -129,55 +148,9 @@ nnoremap <Space>q :close<CR>
 
 " fuzzy find files
 set path+=**
-nnoremap <C-p> :find *
+" nnoremap <C-p> :find *
 nnoremap <Space>f :find *
 
-
-set autoindent
-set smartindent
-set showmatch
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-set showcmd
-set nobackup
-set number
-set ruler
-
-set textwidth=80
-set backspace=indent,eol,start
-
-set tabstop=8
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-
-set hidden
-
-set visualbell t_vb=
-set novisualbell
-
-" set t_Co=16
-syntax on
-let g:molokai_original = 1
-colorscheme molokai
-" let g:rehash256 = 1
-
-" set cursor to switch between modes
-set t_RV=
-let &t_SI="\e[6 q"
-let &t_EI="\e[2 q"
-
-filetype plugin indent on
-
-set wildmenu
-set wildmode=list:longest,full
-set splitright
-set splitbelow
-set mouse=a
-set scrolloff=5
 
 " " Set statusline
 " let g:currentmode={
@@ -227,30 +200,4 @@ set scrolloff=5
 " set statusline+=%#BufferNumberColor#\ %n
 " set statusline+=%#ModColor#\ >>\ %*
 " set noshowmode
-
-
-" Remap Splits
-nnoremap <A-Left> <C-W><C-H>
-nnoremap <A-Down> <C-W><C-J>
-nnoremap <A-Up> <C-W><C-K>
-nnoremap <A-Right> <C-W><C-L>
-
-" Buffer Commands
-nnoremap gb :ls<CR>:b<Space>
-nnoremap <Space>b :ls<CR>:b<Space>
-
-" grep files
-nnoremap gv :vimgrep<Space>
-nnoremap gr :grep!<Space>
-nnoremap <Space>g :grep!<Space>
-
-if executable("rg")
-  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
-  set grepformat=%f:%l:%c:%m
-endif
-
-" fuzzy find files
-set path+=**
-nnoremap <C-p> :find *
-nnoremap <Space>f :find *
 
